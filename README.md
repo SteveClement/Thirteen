@@ -4,9 +4,7 @@ A [MediaWiki](http://www.mediawiki.org/) skin for documentation sites with a ver
 
 ## Installation
 
-To use this skin in your MediaWiki site, copy the files inside this repository into the `skins` folder of your MediaWiki installation.
-
-Set the default skin by changing the `$wgDefaultSkin` variable inside `LocalSettings.php` to `thirteen`.
+To use this skin in your MediaWiki site, copy the files inside this repository into the `skins` folder of your MediaWiki installation. Set the default skin by changing the `$wgDefaultSkin` variable inside `LocalSettings.php` to `thirteen`.
 
 ## License
 The MIT License (MIT)
