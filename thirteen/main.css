@@ -1,0 +1,583 @@
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:300,400,700);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	-webkit-text-size-adjust: none;
+	background: #f7f7f7;
+	color: #222222;
+}
+
+.clear {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+#header-site .container,
+#header-content .container {
+	max-width: 1050px;
+}
+
+/* --- SITE HEADER --- */
+
+#header-site {
+	background: #222222;
+	padding: 25px 0;
+}
+
+#header-site hgroup {
+	display: block;
+	width: 400px;
+}
+
+#header-site hgroup h1 {
+	display: block;
+	width: 400px;
+	height: 90px;
+	color: #f7f7f7;
+	font-weight: 400;
+	font-size: 50px;
+	text-indent: -200%;
+	overflow: hidden;
+	background: transparent no-repeat left bottom;
+	background-size: auto 100%;
+}
+
+#header-site #account_links {
+	display: inline-block;
+	list-style-type: none;
+	float: right;
+	margin: 70px 0 0 0;
+}
+
+#header-site #account_links li {
+	float: left;
+	padding-left: 15px;
+}
+
+#header-site #account_links li a {
+	color: #999999;
+}
+
+#header-site #account_links li a:hover {
+	text-decoration: underline;
+}
+
+/* --- CONTENT HEADER --- */
+
+#header-content {
+	padding: 35px 0 20px;
+}
+
+#header-content h1 {
+	display: block;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 19px;
+}
+
+#header-content h1 .separator {
+	display: inline-block;
+	font-size: 12px;
+	line-height: 0;
+	position: relative;
+	top: -4px;
+	padding: 0 10px;
+	color: #444444;
+}
+
+#header-content h1 a {
+	color: #222222;
+}
+
+#header-content h1 a:hover {
+	color: #666666;
+	text-decoration: none;
+}
+
+#header-content #tools {
+	display: inline-block;
+	padding-left: 3px;
+	float: right;
+	list-style-type: none;
+}
+
+#header-content #tools li {
+	float: left;
+	height: 18px;
+	line-height: 18px;
+}
+
+#header-content #tools li:after {
+	content: '';
+	display: block;
+	float: left;
+	width: 1px;
+	height: 18px;
+	margin: 0 15px;
+	background: #dfdfdf;
+}
+
+#header-content #tools li:last-child:after {
+	display: none;
+}
+
+#header-content #tools li a {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 18px;
+	background: url(images/icons.png) no-repeat 0 -16px;
+	text-indent: -1000%;
+	overflow: hidden;
+}
+
+#header-content #tools li.edit:hover a,
+#header-content #tools li.edit.selected a {
+	background-position: -18px -16px;
+}
+
+#header-content #tools li.history a {
+	background-position: 0 -34px;
+}
+
+#header-content #tools li.history:hover a,
+#header-content #tools li.history.selected a {
+	background-position: -18px -34px;
+}
+
+#header-content #tools li.view a {
+	background-position: 0 -52px;
+}
+
+#header-content #tools li.view:hover a,
+#header-content #tools li.view.selected a {
+	background-position: -18px -52px;
+}
+
+/* --- CONTENT --- */
+
+#content .container {
+	border: 1px solid #dfdfdf;
+	padding: 20px 50px 20px;
+	background: #ffffff;
+}
+
+/* --- CONTENT : BASIC FORMATTING --- */
+
+#content .half {
+	display: block;
+	width: 50%;
+	float: left;
+}
+
+#content a {
+	color: #0077b5;
+}
+
+#content a.new {
+	color: #b52f00;
+}
+
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+	display: block;
+	margin: 30px 0 10px;
+	font-size: 25px;
+	height: 30px;
+}
+
+#content h2 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+#content h3 {
+	font-weight: normal;
+}
+
+#content h4 {
+	font-size: 18px;
+}
+
+#content p {
+	margin: 15px 0 10px;
+}
+
+#content p,
+#content ul li,
+#content ol li {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22px;
+}
+
+#content .intro p {
+	display: block;
+	font-weight: bold;
+	font-size: 120px;
+	line-height: 110px;
+	margin: 40px 0 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#content hr {
+	border: none;
+	border-top: 1px solid #dfdfdf;
+	margin: 30px 0;
+}
+
+#content ul,
+#content ol {
+	margin: 15px 0 20px 48px;
+}
+
+#content ul ul,
+#content ul ol,
+#content ol ul,
+#content ol ol,
+#content table tr td ul,
+#content table tr td ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 30px;
+}
+
+#content ul li,
+#content ol li {
+	padding: 0 0 2px 0;
+}
+
+#content table.underlined {
+	width: 100%;
+	border-spacing: 0;
+	margin: 10px 0 20px;
+}
+
+#content table.underlined tr td,
+#content table.underlined tr th {
+	vertical-align: top;
+	border-bottom: 1px solid #dfdfdf;
+	padding: 8px 6px;
+}
+
+#content table.underlined tr th {
+	border-width: 2px;
+}
+
+#content table.underlined tr:nth-child(odd) {
+	background: #f7f7f7;
+}
+
+#content table.underlined tr:first-child {
+	background: #ffffff;
+}
+
+#content .quotes {
+	display: block;
+	margin: 0 -15px 0 0;
+}
+
+#content .quotes blockquote {
+	display: inline-block;
+	width: 284px;
+	padding: 0 15px;
+	margin: 20px 0;
+	font-size: 18px;
+	vertical-align: top;
+	font-weight: bold;
+	border-left: 3px solid #dfdfdf;
+}
+
+#content .quotes blockquote i {
+	display: block;
+	font-weight: normal;
+	color: #666666;
+	font-style: normal;
+	padding: 5px 0 0 0;
+	font-size: 16px;
+}
+
+#content pre {
+	display: block;
+	font-size: 13px;
+	font-family: "Source Code Pro";
+	margin: 10px 0 20px;
+}
+
+#content .info {
+	border: 1px solid #dfdfdf;
+	padding: 8px 12px;
+	margin: 30px 0;
+	background: #f7f7f7;
+}
+
+#content .thumb {
+	display: block;
+	background: #f7f7f7;
+	border: 1px solid #dfdfdf;
+	padding: 10px;
+	margin: 0 0 0 18px;
+}
+
+#content .thumb .thumbcaption {
+	padding-top: 3px;
+}
+
+/* --- CONTENT : REFERENCES --- */
+
+#content .ref {
+	display: block;
+	color: #666666;
+	border-left: 3px solid #dfdfdf;
+	padding: 0 0 0 18px;
+	margin: 5px 0 0 0;
+}
+
+#content .ref:before {
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 10px 0 0;
+	opacity: 0.87;
+	position: relative;
+	top: 3px;
+	background: url(images/icons.png) no-repeat 0 0;
+}
+
+#content .ref.book:before {
+	background-position: 0 0;
+}
+
+#content .ref.translation:before {
+	background-position: -16px 0;
+}
+
+#content .ref.link:before {
+	background-position: -32px 0;
+}
+
+#content .ref .title {
+	font-weight: bold;
+	color: #222222;
+}
+
+#content .ref a.title {
+	color: #0077b5;
+}
+
+#content .ref .detail:before {
+	content: '—';
+	display: inline-block;
+	padding: 0 4px 0 5px;
+	font-weight: normal;
+	color: #666666;
+}
+
+#content .ref .detail {
+	color: #666666;
+}
+
+#content .color {
+	font-weight: bold;
+}
+
+#content .color.color-blue {
+	border-bottom: 2px solid #006ea7;
+}
+
+#content .color.color-red {
+	border-bottom: 2px solid #a70000;
+}
+
+/* --- CONTENT : EDIT LINKS --- */
+
+#content .editsection {
+	display: inline-block;
+	text-indent: -200%;
+	overflow: hidden;
+	float: none;
+	font-size: 0;
+	padding: 0 0 0 4px;
+}
+
+#content .editsection a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin: 4px 0 0 0;
+	background: url(images/icons.png) no-repeat 0 -16px;	
+}
+
+#content .editsection a:hover {
+	background-position: -18px -16px;
+}
+
+#content .mw-headline {
+	float: left;
+}
+
+/* --- CONTENT : TABLE OF CONTENTS --- */
+
+#content #toc {
+	border-left: 3px solid #dfdfdf;
+	border-spacing: 0;
+	margin: 20px 0 30px 0;
+}
+
+#content #toc tr td {
+	border: none !important;
+	padding: 0;
+}
+
+#content #toc ul {
+	margin: 0 0 0 18px !important;
+	list-style-type: none;
+}
+
+#content #toc .tocnumber {
+	display: inline-block;
+	color: #b3b3b3;
+	padding: 0 5px 0 0;
+}
+
+#content #toc a {
+	color: #666666;
+}
+
+#content #toc h2,
+#content #toc span.toctoggle {
+	display: none;
+}
+
+/* --- CONTENT : WIKI GENERATED CONTENT --- */
+
+#content #editform {
+	margin: 20px 0 0 0;
+}
+
+#content #editform textarea {
+	font-family: 'Source Code Pro';
+	font-size: 14px;
+	padding: 15px;
+	width: 918px;
+	resize: none;
+}
+
+#content .editOptions {
+	margin: 30px 0 20px 0;
+}
+
+#content fieldset {
+	padding: 20px;
+	margin: 15px 0 0 0;
+	border: 1px solid #dfdfdf;
+}
+
+#content fieldset legend {
+	display: block;
+	background: #ffffff;
+	padding: 0 5px;
+}
+
+#content #pagehistory {
+	margin-left: 0;
+	list-style-type: none;
+}
+
+#content #pagehistory input {
+	margin: 0 4px;
+}
+
+#content #pagehistory .mw-usertoollinks,
+#content #pagehistory .mw-history-histlinks {
+	display: none;
+}
+
+#content h2.mw-specialpagesgroup {
+	margin-bottom: 30px;
+}
+
+/* --- FOOTER --- */
+
+footer {
+	display: block;
+	color: #666666;
+	font-size: 15px;
+	padding-bottom: 50px;
+}
+
+footer .container {
+	position: relative;
+	padding: 20px 50px;
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+footer a {
+	color: #666666;
+}
+
+footer #page-actions,
+footer #footer-places {
+	display: block;
+	margin: 10px 0;
+	height: 20px;
+	list-style-type: none;
+}
+
+footer #page-actions li,
+footer #footer-places li {
+	list-style-type: none;
+	float: left;
+	border-left: 1px solid #dfdfdf;
+	padding: 0 10px;
+	line-height: 20px;
+	text-transform: lowercase;
+}
+
+footer #page-actions li:first-child,
+footer #footer-places li:first-child {
+	border: none;
+	padding-left: 0;
+}
+
+footer #footer-info {
+	list-style-type: none;
+}
+
+footer #footer-info li {
+	padding: 2px 0;
+}
