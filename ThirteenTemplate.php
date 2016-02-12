@@ -1,11 +1,11 @@
 <?php
 
-//
-// Thirteen skin
-//
-// Author: Fränz Friederes <fraenz@frieder.es>
-// Link: https://github.com/the2f/Thirteen
-//
+/**
+ * Thirteen skin
+ * https://github.com/ffraenz/Thirteen
+ *
+ * @author: Fränz Friederes <fraenz@frieder.es>
+ */
 
 // prevent direct file access
 if (!defined('MEDIAWIKI'))
