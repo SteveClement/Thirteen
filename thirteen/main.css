@@ -189,6 +189,12 @@ a:hover {
 	background: #ffffff;
 }
 
+#content .container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
 /* --- CONTENT : BASIC FORMATTING --- */
 
 #content .half {
@@ -251,6 +257,21 @@ a:hover {
 	text-transform: uppercase;
 }
 
+#content .intro-text {
+	padding: 30px 0 30px 50px;
+	font-family: serif;
+}
+
+#content .intro-text a {
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+#content .intro-text p {
+	font-size: 30px;
+	line-height: 38px;
+	font-family: serif;
+}
+
 #content hr {
 	border: none;
 	border-top: 1px solid #dfdfdf;
@@ -299,8 +320,16 @@ a:hover {
 	background: #f7f7f7;
 }
 
+#content table.underlined.no-color-alt tr:nth-child(odd) {
+	background: transparent;
+}
+
+#content table.underlined tr.color-alt {
+	background: #f7f7f7 !important;
+}
+
 #content table.underlined tr:first-child {
-	background: #ffffff;
+	background: transparent;
 }
 
 #content .quotes {
@@ -423,7 +452,7 @@ a:hover {
 
 /* --- CONTENT : EDIT LINKS --- */
 
-#content .editsection {
+#content .mw-editsection {
 	display: inline-block;
 	text-indent: -200%;
 	overflow: hidden;
@@ -432,15 +461,15 @@ a:hover {
 	padding: 0 0 0 4px;
 }
 
-#content .editsection a {
+#content .mw-editsection a {
 	display: block;
 	width: 18px;
 	height: 18px;
 	margin: 4px 0 0 0;
-	background: url(images/icons.png) no-repeat 0 -16px;	
+	background: url(images/icons.png) no-repeat 0 -16px;
 }
 
-#content .editsection a:hover {
+#content .mw-editsection a:hover {
 	background-position: -18px -16px;
 }
 

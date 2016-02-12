@@ -1,0 +1,13 @@
+{
+    "name": "Thirteen",
+    "author": ["Fränz Friederes"],
+    "type": "skin",
+    "ValidSkinNames": {
+        "thirteen": "Thirteen"
+    },
+    "AutoloadClasses": {
+        "SkinThirteen": "SkinThirteen.php",
+        "ThirteenTemplate": "ThirteenTemplate.php"
+    },
+    "manifest_version": 1
+}

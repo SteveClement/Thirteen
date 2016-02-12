@@ -2,9 +2,7 @@
 
 //
 // Thirteen skin
-// Thirteen.php
 //
-// Version: 1.0
 // Author: Fränz Friederes <fraenz@frieder.es>
 // Link: https://github.com/the2f/Thirteen
 //
@@ -12,33 +10,6 @@
 // prevent direct file access
 if (!defined('MEDIAWIKI'))
 	die(- 1);
-
-class SkinThirteen extends SkinTemplate
-{
-	var $useHeadElement = true;
-
-	function initPage(OutputPage $out)
-	{
-		parent::initPage($out);
-
-		// skin details
-		$this->skinname  = 'thirteen';
-		$this->stylename = 'thirteen';
-		$this->template  = 'ThirteenTemplate';
-	}
-
-	function setupSkinUserCss(OutputPage $out)
-	{
-		global $wgHandheldStyle;
-
-		parent::setupSkinUserCss($out);
-
-		// append style links
-		$out->addStyle('thirteen/main.css', 'screen');
-		$out->addStyle('thirteen/print.css', 'print');
-	}
-
-}
 
 class ThirteenTemplate extends BaseTemplate {
 
