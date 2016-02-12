@@ -1,15 +1,19 @@
 Thirteen
 ========
-A [MediaWiki](http://www.mediawiki.org/) skin for documentation sites with a very reduced and clean design.
+Just another [MediaWiki](http://www.mediawiki.org/) skin.
 
 ## Installation
 
-To use this skin in your MediaWiki site, copy the files inside this repository into the `skins` folder of your MediaWiki installation. Set the default skin by changing the `$wgDefaultSkin` variable inside `LocalSettings.php` to `thirteen`.
+Clone this repository inside the `skins` folder of your MediaWiki installation.
+
+Add following lines to the end of `LocalSettings.php`:
+
+    require_once "$IP/skins/Thirteen/Thirteen.php";    $wgDefaultSkin = "thirteen";
 
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2013 Fränz Friederes <[fraenz@frieder.es](mailto:fraenz@frieder.es)>
+Copyright (c) 2016 Fränz Friederes <[fraenz@frieder.es](mailto:fraenz@frieder.es)>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
