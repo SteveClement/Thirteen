@@ -87,7 +87,7 @@ class ThirteenTemplate extends BaseTemplate {
 				&& $this->data['content_navigation']['views']['view']['class'] == 'selected'
 			) {
 				// actual title split
-				$parts = split('/', $title);
+				$parts = explode('/', $title);
 				$base_url = '';
 
 				for ($i = 0; $i < count($parts) - 1; $i ++)
